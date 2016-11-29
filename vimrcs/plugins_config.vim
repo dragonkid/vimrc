@@ -205,7 +205,16 @@ nnoremap <silent> <leader>c :call SyntasticCheckCoffeescript()<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Git gutter (Git diff)
+" => airblade/vim-gitgutter
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:gitgutter_enabled=0
+let g:gitgutter_enabled=1
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
+" update signs across all visiable buffer
+let g:gitgutterall=1
+" git diff ignore whitespace
+let g:gitgutter_diff_args = '-w'
+set updatetime=100
+nmap ]c <Plug>GitGutterNextHunk
+nmap [c <Plug>GitGutterPrevHunk
+nmap <Leader>hr <Plug>GitGutterUndoHunk
+nmap <Leader>hv <Plug>GitGutterPreviewHunk
