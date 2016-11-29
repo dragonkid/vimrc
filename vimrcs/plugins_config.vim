@@ -118,10 +118,13 @@ set grepprg=/bin/grep\ -nH
 let g:NERDTreeWinPos = "left"
 let NERDTreeShowHidden=0
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
+let NERDTreeQuitOnOpen=1
 let g:NERDTreeWinSize=35
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark
 map <leader>nf :NERDTreeFind<cr>
+" close vim if the only window was closed
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -212,9 +215,14 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 " update signs across all visiable buffer
 let g:gitgutterall=1
 " git diff ignore whitespace
-let g:gitgutter_diff_args = '-w'
+ let g:gitgutter_diff_args = '-w'
 set updatetime=100
 nmap ]c <Plug>GitGutterNextHunk
 nmap [c <Plug>GitGutterPrevHunk
 nmap <Leader>hr <Plug>GitGutterUndoHunk
 nmap <Leader>hv <Plug>GitGutterPreviewHunk
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Valloric/YouCompleteMe
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
