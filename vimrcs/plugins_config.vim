@@ -6,11 +6,54 @@
 
 
 """"""""""""""""""""""""""""""
-" => Load pathogen paths
+" => Enable Vundle
 """"""""""""""""""""""""""""""
-call pathogen#infect('~/.vim_runtime/sources_forked/{}')
-call pathogen#infect('~/.vim_runtime/sources_non_forked/{}')
-call pathogen#helptags()
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'bufExplorer.zip'
+Plugin 'itchyny/lightline.vim'
+Plugin 'mru.vim'
+Plugin 'yankstack'
+Plugin 'ctrlp.vim'
+Plugin 'ZenCoding.vim'
+Plugin 'snipMate'
+Plugin 'grep.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'surround.vim'
+Plugin 'vimroom.vim'
+Plugin 'fatih/vim-go'
+Plugin 'Syntastic'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'Valloric/YouCompleteMe'
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
 
 """"""""""""""""""""""""""""""
 " => bufExplorer plugin
