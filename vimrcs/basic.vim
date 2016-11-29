@@ -53,6 +53,9 @@ filetype indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 
+" Open file with line number
+set nu
+
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
 let mapleader = ","
@@ -367,6 +370,8 @@ map <leader>x :e ~/buffer.md<cr>
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
+" Toggle line number mode on and off
+map <leader>nu :setlocal nu!<cr>
 
 
 
