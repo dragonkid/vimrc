@@ -35,6 +35,7 @@ Plugin 'fatih/vim-go'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'jiangmiao/auto-pairs'
 
 
 " All of your Plugins must be added before the following line
@@ -51,6 +52,12 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+
+""""""""""""""""""""""""""""""
+" => jiangmiao/auto-pairs
+""""""""""""""""""""""""""""""
+let g:AutoPairsFlyMode = 0
 
 
 """"""""""""""""""""""""""""""
@@ -204,7 +211,7 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 " update signs across all visiable buffer
 let g:gitgutterall=1
 " git diff ignore whitespace
- let g:gitgutter_diff_args = '-w'
+let g:gitgutter_diff_args = '-w'
 set updatetime=100
 nmap ]c <Plug>GitGutterNextHunk
 nmap [c <Plug>GitGutterPrevHunk
