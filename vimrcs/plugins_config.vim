@@ -20,7 +20,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'jlanzarotta/bufexplorer'
 Plugin 'itchyny/lightline.vim'
 Plugin 'vim-scripts/mru.vim'
 Plugin 'maxbrunsfeld/vim-yankstack'
@@ -52,16 +51,6 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
-
-""""""""""""""""""""""""""""""
-" => bufExplorer plugin
-""""""""""""""""""""""""""""""
-let g:bufExplorerDefaultHelp=0
-let g:bufExplorerShowRelativePath=1
-let g:bufExplorerFindActive=1
-let g:bufExplorerSortBy='name'
-map <leader>o :BufExplorer<cr>
 
 
 """"""""""""""""""""""""""""""
