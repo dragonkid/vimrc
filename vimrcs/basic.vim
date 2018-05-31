@@ -318,6 +318,9 @@ endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
 
+" Jump to begin or end of line while in insert mode
+inoremap <C-e> <C-o>$
+inoremap <C-a> <C-o>0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ag searching and cope displaying
