@@ -364,8 +364,8 @@ map <leader>x :e ~/buffer.md<cr>
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
-" Toggle line number mode on and off
-map <leader>nu :setlocal nu!<cr>
+" Toggle line number mode and relative number mode on and off
+map <leader>nu :setlocal nu! rnu!<cr>
 
 
 
