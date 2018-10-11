@@ -367,6 +367,9 @@ map <leader>pp :setlocal paste!<cr>
 " Toggle line number mode and relative number mode on and off
 map <leader>nu :setlocal nu! rnu!<cr>
 
+" Copy to clipboard
+set clipboard+=unnamed
+set clipboard+=unnamedplus
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
