@@ -36,6 +36,7 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'vim-scripts/vim-auto-save'
 
 
 " All of your Plugins must be added before the following line
@@ -52,6 +53,15 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+
+""""""""""""""""""""""""""""""
+" => vim-scripts/vim-auto-save
+""""""""""""""""""""""""""""""
+let g:auto_save = 1  " enable AutoSave on Vim startup"
+let g:auto_save_no_updatetime = 1  " do not change the 'updatetime' option
+let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
+let g:auto_save_silent = 0  " toggle display the auto-save notification"
 
 
 """"""""""""""""""""""""""""""
