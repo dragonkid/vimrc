@@ -128,7 +128,6 @@ let NERDTreeQuitOnOpen=0
 let NERDTreeSortOrder=['\/$', '*', '[[-timestamp]]']
 let g:NERDTreeWinSize=35
 map <leader>nn :NERDTreeToggle<cr>
-map <leader>nb :NERDTreeFromBookmark
 map <leader>nf :NERDTreeFind<cr>
 " close vim if the only window was closed
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

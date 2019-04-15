@@ -322,6 +322,10 @@ autocmd BufWrite *.coffee :call DeleteTrailingWS()
 inoremap <C-e> <C-o>$
 inoremap <C-a> <C-o>0
 
+" Disable automatic comment insertion
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ag searching and cope displaying
 "    requires ag.vim - it's much better than vimgrep/grep
