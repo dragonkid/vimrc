@@ -20,6 +20,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'rlue/vim-barbaric'
 Plugin 'itchyny/lightline.vim'
 Plugin 'vim-scripts/mru.vim'
 Plugin 'maxbrunsfeld/vim-yankstack'
@@ -62,6 +63,19 @@ let g:auto_save = 1  " enable AutoSave on Vim startup"
 let g:auto_save_no_updatetime = 1  " do not change the 'updatetime' option
 let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
 let g:auto_save_silent = 0  " toggle display the auto-save notification"
+
+
+""""""""""""""""""""""""""""""
+" => rlue/vim-barbaric
+" Require: https://github.com/myshov/xkbswitch-macosx
+""""""""""""""""""""""""""""""
+
+" Forget alternate input method after n seconds in Normal mode (disabled by default)
+" Useful if you only need IM persistence for short bursts of active work.
+let g:barbaric_timeout = 60
+
+" The scope where alternate input methods persist (buffer, window, tab, global)
+let g:barbaric_scope = 'buffer'
 
 
 """"""""""""""""""""""""""""""
