@@ -139,7 +139,7 @@ set grepprg=/bin/grep\ -nH
 let g:NERDTreeWinPos = "left"
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
-let NERDTreeQuitOnOpen=0
+let NERDTreeQuitOnOpen=1
 let NERDTreeSortOrder=['\/$', '*', '[[-timestamp]]']
 let g:NERDTreeWinSize=35
 map <leader>nn :NERDTreeToggle<cr>
